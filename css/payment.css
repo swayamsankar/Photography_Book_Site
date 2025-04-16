@@ -1,0 +1,81 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, rgba(74, 54, 33, 0.8) 0%, rgba(230, 225, 224, 0.8) 100%), url('/images/paymentbg1.png') center/cover no-repeat;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    z-index: 0; /* Added to ensure body is below overlay */
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    pointer-events: none; /* Added to allow clicks to pass through */
+}
+
+.payment-container {
+    max-width: 400px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 30px;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(255, 105, 180, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+input, button {
+    width: 90%;
+    padding: 15px;
+    margin: 15px 0;
+    border: 2px solid rgba(255, 182, 193, 0.5);
+    border-radius: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    border-color: #04fff7;
+    box-shadow: 0 0 0 3px rgba(255, 105, 180, 0.2);
+}
+
+button {
+    background: linear-gradient(45deg, rgb(7, 214, 255), #ff0008);
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    box-shadow: 0 4px 6px rgba(255, 105, 180, 0.2);
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(255, 105, 180, 0.3);
+    background: linear-gradient(45deg, #00fbff, #ff69b4);
+}

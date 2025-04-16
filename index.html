@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CreativeLens Studio - Photography & Videography</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- Include FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>THRILLING FRAMES MEDIA</h1> <!-- Business Name/Logo -->
+            </div>
+            <nav>
+                <!-- Navigation menu -->
+                <ul id="sidemenu">
+                    <li><a href="#hero">Home</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#pricing">Packages & Pricing</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <!-- Close menu icon -->
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <!-- Open menu (hamburger) icon -->
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </header>
+    <script src="js/script.js"></script>
+    <script src="js/payment.js"></script>
+</body>
+</html>
+
+    <!-- Hero Section -->
+<section id="hero" class="hero">
+    <div class="hero-background">
+        <div class="image-slider">
+            <img src="images/background1.png" alt="Hero Image 1" class="hero-image active">
+            <img src="images/background2.png" alt="Hero Image 2" class="hero-image">
+            <img src="images/background3.png" alt="Hero Image 3" class="hero-image">
+            <img src="images/background4.png" alt="Hero Image 4" class="hero-image">
+            <img src="images/background5.png" alt="Hero Image 5" class="hero-image">
+        </div>
+    </div>
+    <div class="hero-content">
+        <i class="fa-solid fa-video" style="animation: flip 2s infinite ease-in-out, pulse 2s infinite ease-in-out"></i> <!-- Updated camera icon with flip and pulse animation -->
+        <h2>Capturing Moments, <span>Creating Stories</span> <br> with our Team.</h2>
+    </div>
+</section>
+
+
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>ABOUT US</h2>
+        <div class="team-container">
+            <div class="team-member">
+                <img src="images/team1.png" alt="Team Member 1" class="member-photo">
+                <h3>SWAYAM SANKAR NAYAK</h3>
+                <p>Founder & Video Editing Specialist</p>
+                <p>Swayam brings creative vision and technical expertise to video editing, transforming raw footage into polished, engaging content.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team2.png" alt="Team Member 2" class="member-photo">
+                <h3>SANJEEB POTHAL</h3>
+                <p>Specialty: Photography</p>
+                <p>Sanjeeb has a keen eye for composition and lighting, capturing stunning still images that tell powerful stories.</p>
+            </div>
+            <div class="team-member">
+                <img src="images/team3.png" alt="Team Member 3" class="member-photo">
+                <h3>ADITYA NAYAK</h3>
+                <p>Specialty: Videography</p>
+                <p>Aditya’s videography skills capture dynamic footage, bringing stories to life with cinematic quality.</p>
+            </div>
+        </div>
+    </section>
+<!-- Services Section -->
+<section id="services" class="services">
+    <div class="container">
+        <h2>Our Services</h2>
+        <div class="service-grid">
+            <div class="service-item">
+                <h3>Photography</h3>
+                <ul>
+                    <li>Event Photography</li>
+                    <li>Portrait Photography</li>
+                    <li>Commercial Photography (e.g., products, real estate)</li>
+                </ul>
+            </div>
+            <div class="service-item">
+                <h3>Videography</h3>
+                <ul>
+                    <li>Event Videography (weddings, corporate)</li>
+                    <li>Promotional Videos</li>
+                    <li>Documentary Filmmaking</li>
+                </ul>
+            </div>
+        </div>
+<!-- Sample Works Section -->
+<div class="sample-works">
+    <h3>Sample Works</h3>
+    <div class="sample-container">
+        <div class="sample-item">
+            <div class="sample-content">
+                <img src="images/sample1.jpg" alt="Sample 1">
+                <p>Wedding Photography</p>
+            </div>
+        </div>
+        <div class="sample-item">
+            <div class="sample-content">
+                <video controls onclick="this.requestFullscreen()">
+                    <source src="videos/sample2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Corporate Event Videography</p>
+            </div>
+        </div>
+        <div class="sample-item">
+            <div class="sample-content">
+                <img src="images/sample3.png" alt="Sample 3">
+                <p>Product Photography</p>
+            </div>
+        </div>
+        <div class="sample-item">
+            <div class="sample-content">
+                <video controls onclick="this.requestFullscreen()">
+                    <source src="videos/sample4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Promotional Video</p>
+            </div>
+        </div>
+        <div class="sample-item">
+            <div class="sample-content">
+                <img src="images/sample5.jpg" alt="Sample 5">
+                <p>Portrait Photography</p>
+            </div>
+        </div>
+        <div class="sample-item">
+            <div class="sample-content">
+                <video controls onclick="this.requestFullscreen()">
+                    <source src="videos/sample6.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <p>Documentary Filmmaking</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Packages & Pricing Section -->
+<section id="pricing" class="pricing">
+    <div class="container">
+        <h2>Packages & Pricing</h2>
+        <div class="pricing-cards">
+            <div class="pricing-card basic">
+                <h3>Basic Package</h3>
+                <p class="price">₹55,000</p>
+                <ul>
+                    <li>Event Photography</li>
+                    <li>Up to 2 hours</li>
+                    <li>Online Gallery</li>
+                </ul>
+                <button onclick="window.location.href='payment.html?package=basic'">Choose Basic</button>
+            </div>
+            <div class="pricing-card premium">
+                <h3>Premium Package</h3>
+                <p class="price">₹100,000</p>
+                <ul>
+                    <li>Event Photography</li>
+                    <li>Up to 5 hours</li>
+                    <li>Online Gallery</li>
+                    <li>Photo Album</li>
+                </ul>
+                <button onclick="window.location.href='payment.html?package=premium'">Choose Premium</button>
+            </div>
+            <div class="pricing-card custom">
+                <h3>Custom Package</h3>
+                <p class="price">Contact for Quote</p>
+                <ul>
+                    <li>Tailored Services</li>
+                    <li>Flexible Hours</li>
+                    <li>Personal Consultation</li>
+                </ul>
+                <button onclick="window.location.href='#contact'">Request a Quote</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="contact-section">
+    <h2>Contact Us</h2>
+    <p>If you have any questions, feel free to reach out!</p>
+    <div class="contact-container">
+        <form name="submit-to-google-sheet">
+            <input name="name" type="text" placeholder="Name" required><br>
+            <input name="email" type="email" placeholder="Email" required><br>
+            <input name="subject" type="text" placeholder="Subject" required><br>
+            <textarea name="message" placeholder="Message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+
+        <p id="response-message"></p>
+
+        <script>
+            const scriptURL = "https://script.google.com/macros/s/AKfycbxS7qcgCVYtoioTTaXGstrksmgKGVRvYqfRxl38CifAq9l5DyhPNvzxxWZMTcoUOVJXeQ/exec";
+            const form = document.forms["submit-to-google-sheet"];
+            const responseMessage = document.getElementById("response-message");
+
+            form.addEventListener("submit", async (e) => {
+                e.preventDefault();
+                responseMessage.textContent = "Submitting...";
+                responseMessage.style.color = "black";
+
+                const formData = new FormData(form);
+
+                try {
+                    const response = await fetch(scriptURL, {
+                        method: "POST", 
+                        body: formData,
+                        mode: 'no-cors'
+                    });
+
+                    responseMessage.textContent = "Form submitted successfully!";
+                    responseMessage.style.color = "green";
+                    form.reset();
+                } catch (error) {
+                    responseMessage.textContent = "Error submitting form. Please check your network connection.";
+                    responseMessage.style.color = "red";
+                    console.error("Fetch Error:", error);
+                }
+            });
+        </script>
+    </div>
+</section>
+        <div id="msg"></div>
+        <div class="business-info">
+            <h2>Business Info</h2>
+            <ul>
+                <li>Thrilling Frames Productions</li>
+                <li>Address: Bhubaneswar,Odisha,India</li>
+                <li>Email:thrillingframes7090@gmail.com</li>
+                
+                <li>Phone: 8283954321</li>
+            </ul>
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <a href="https://l.instagram.com/?u=https%3A%2F%2Finstagram.com%2Fthrilling_frames_97%3Figshid%3DMzRlODBiNWFlZA%253D%253D%26fbclid%3DPAZXh0bgNhZW0CMTEAAaYepliwPja3jGTBeDSD5z-U92N4-zz97LBZGy5Gyss7lNbUJtQfl8xq0gI_aem_5M3cH3NfkOFpm92yLaviCA&e=AT0ehPvnTNLTHOMtJbKZDdih0YAq2FjHBY2RpUlEdoX0aZgke2Z7UZmi8ldzg575zuUUmvveTcJWHJkzJfSwPeK_qnHEPOTDYRPOxA" target="_blank" aria-label="Follow us on Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.facebook.com/share/14uzREY2aT/" target="_blank" aria-label="Follow us on Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="https://x.com/SwayamSankar3?t=9n_KMQN_tLvDwZMj6NFzKg&s=09 target="_blank" aria-label="Follow us on Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>&copy; 2024 Thrilling Frames Media. All rights reserved.</p>
+    </div>
+    
+  
+
+  </body>
+</html>

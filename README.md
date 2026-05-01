@@ -75,6 +75,9 @@ cd photography-booking-site
 <img width="1886" height="801" alt="image" src="https://github.com/user-attachments/assets/e429c2c7-96bf-4840-abe9-17b86c0fcff0" />
 
 
+# Architecture Diagram
+<img width="1440" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a701416-cb0b-4d29-b027-26c6908ea8be" />
+
 
 
 ### 3️⃣ Open the website
